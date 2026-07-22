@@ -47,4 +47,3 @@ Two Chrome windows will open — one runs the speed test, the other (only if nee
 ## Notes to self
 
 - The speed test page occasionally throws its own "upload test error" if a firewall/VPN is interfering with the WebSocket connection it uses — that's the site's issue, not the script's.
-- The compose modal and the inline compose box on the login site share the same CSS classes, so the code targets the modal by its `id` specifically to avoid clicking the wrong one.
