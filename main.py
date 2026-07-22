@@ -1,6 +1,6 @@
 from selenium import webdriver
 import os
-from automated_login import AutomatedLogin
+from twit_bot import TwitBot
 from internet_speed_twitter_bot import InternetSpeedTwitterBot
 from time import sleep
 
@@ -12,6 +12,6 @@ internet_speed_twitter_bot = InternetSpeedTwitterBot(internet_speed_driver)
 internet_speed_twitter_bot.get_internet_speed()
 
 twitter_driver = webdriver.Chrome(options=chrome_options)
-automated_login = AutomatedLogin(twitter_driver)
-automated_login.login()
+twit_bot = TwitBot(twitter_driver)
+twit_bot.decide_complain(internet_speed_twitter_bot.down, internet_speed_twitter_bot.up)
 

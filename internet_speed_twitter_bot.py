@@ -46,7 +46,3 @@ class InternetSpeedTwitterBot:
         print(f"Download speed: {self.down}")
         print(f"Upload speed: {self.up}")
         self.driver.quit()
-
-
-    def tweet_at_provider(self):
-        pass
